@@ -14,9 +14,9 @@
  * set the override_redirect flag. Clients are organized in a linked client
  * list on each monitor, the focus history is remembered through a stack list
  * on each monitor. Each client contains a bit array to indicate the tags of a
- * client.
+ * client.#
  *
- * Keys and tagging rules are organized as arrays and defined in config.h.
+ * Keys and tagging rules are organized as arrays and defined in config.def.h.
  *
  * To understand everything else, start reading main().
  */
