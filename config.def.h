@@ -34,6 +34,7 @@ static const unsigned int alphas[][3]      = {
 
 /* tagging */
 static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -124,6 +125,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+ 	{ MODKEY,                       XK_n,      togglealttag,   {0} },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("lock.sh &") },
 	{ MODKEY,                       XK_Print,      spawn,      SHCMD("scrot") },
 	TAGKEYS(                        XK_1,                      0)
